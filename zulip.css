@@ -3,8 +3,22 @@
  * License: MIT License
 */
 
+:root {
+    /* Discord colors */
+    --background-primary: #36393f;
+    --background-secondary: #2f3136;
+    --background-tertiary: #202225;
+    --channeltextarea-background: #40444b;
+    --scrollbar-auto-thumb: #202225;
+
+    /* Custom colors */
+    --color-administrator: #e74c3c;
+    --color-staff: #2ecc71;
+    --color-patch-contributor: #e67e22;
+}
+
 body {
-    background-color: #2f3136 !important; /* --background-secondary */
+    background-color: var(--background-secondary) !important;
 }
 
 /* unset background color to inherit body default */
@@ -19,7 +33,7 @@ body {
 #compose_controls,
 .compose-content {
     border: unset !important; /* remove useless border */
-    background-color: #40444b !important; /* --channeltextarea-background */
+    background-color: var(--channeltextarea-background) !important;
 }
 
 /* apply a different background color for the middle column */
@@ -27,7 +41,7 @@ body {
 .header-main > .column-middle,
 #message_view_header_underpadding,
 .floating_recipient .message-header-wrapper {
-    background-color: #36393f !important; /* --background-primary */
+    background-color: var(--background-primary) !important;
 }
 
 /* disables useless background-color overwriting killer padding */
@@ -89,8 +103,8 @@ body > .header {
 
 /* changes the appearance for code blocks */
 .rendered_markdown .codehilite pre {
-    background-color: #2f3136 !important; /* --background-secondary */
-    border: 1px solid #202225 !important; /* --background-tertiary */
+    background-color: var(--background-secondary) !important;
+    border: 1px solid var(--background-tertiary) !important;
     font-size: 0.875rem !important;
     line-height: 1.125rem !important;
     text-indent: 0 !important;
@@ -106,8 +120,8 @@ body > .header {
 .message_embed {
     border-radius: 4px;
     padding: .75rem !important;
-    background-color: #2f3136 !important;  /* --background-secondary */
-    border-left: 4px solid #202225 !important; /* --background-tertiary */
+    background-color: var(--background-secondary) !important;
+    border-left: 4px solid var(--background-tertiary) !important;
 }
 
 /* add a gap between embed text and picture */
@@ -131,7 +145,7 @@ body > .header {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #202225; /* --scrollbar-auto-thumb */
+    background-color: var(--scrollbar-auto-thumb);
 }
 
 ::-webkit-scrollbar-thumb,
@@ -146,20 +160,17 @@ body > .header {
 }
 
 /* custom user colors */
-/* - Reds */
-/* botder */ .u-380408 + .sender_name { color: rgb(231, 76, 60); }
-/* jhxp */ .u-380709 + .sender_name { color: rgb(231, 76, 60); }
-/* sbx320 */ .u-381687 + .sender_name { color: rgb(231, 76, 60); }
+/* botder */ .u-380408 + .sender_name { color: var(--color-administrator); }
+/* jhxp */   .u-380709 + .sender_name { color: var(--color-administrator); }
+/* sbx320 */ .u-381687 + .sender_name { color: var(--color-administrator); }
 
-/* - Greens */
-/* Lspd */ .u-380787 + .sender_name { color: rgb(46, 204, 113); }
-/* Patrick */ .u-380656 + .sender_name { color: rgb(46, 204, 113); }
-/* Disi */ .u-380447 + .sender_name { color: rgb(46, 204, 113); }
-/* SERIOUSLY? */ .u-380553 + .sender_name { color: rgb(46, 204, 113); }
-/* Deihim007 */ .u-380655 + .sender_name { color: rgb(46, 204, 113); }
+/* Lspd */       .u-380787 + .sender_name { color: var(--color-staff); }
+/* Patrick */    .u-380656 + .sender_name { color: var(--color-staff); }
+/* Disi */       .u-380447 + .sender_name { color: var(--color-staff); }
+/* SERIOUSLY? */ .u-380553 + .sender_name { color: var(--color-staff); }
+/* Deihim007 */  .u-380655 + .sender_name { color: var(--color-staff); }
 
-/* - Oranges */
-/* Haxardous */ .u-381881 + .sender_name { color: rgb(230, 126, 34); }
-/* CrosRoad95 */ .u-381746 + .sender_name { color: rgb(230, 126, 34); }
-/* 4O4 */ .u-381697 + .sender_name { color: rgb(230, 126, 34); }
-/* cleopatra */ .u-381653 + .sender_name { color: rgb(230, 126, 34); }
+/* Haxardous */  .u-381881 + .sender_name { color: var(--color-patch-contributor); }
+/* CrosRoad95 */ .u-381746 + .sender_name { color: var(--color-patch-contributor); }
+/* 4O4 */        .u-381697 + .sender_name { color: var(--color-patch-contributor); }
+/* cleopatra */  .u-381653 + .sender_name { color: var(--color-patch-contributor); }
