@@ -17,13 +17,13 @@
     --color-patch-contributor: #e67e22;
 }
 
-body {
+.app,
+.header-main {
     background-color: var(--background-secondary) !important;
 }
 
 /* unset background color to inherit body default */
 .app-main,
-.header-main,
 #compose,
 #compose-container {
     background-color: unset !important;
