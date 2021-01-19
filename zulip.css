@@ -155,7 +155,7 @@ body > .header {
 /* Lspd */ .u-380787 + .sender_name { color: rgb(46, 204, 113); }
 /* Patrick */ .u-380656 + .sender_name { color: rgb(46, 204, 113); }
 /* Disi */ .u-380447 + .sender_name { color: rgb(46, 204, 113); }
-/* SERIOUSLY? */ u-380553 + .sender_name { color: rgb(46, 204, 113); }
+/* SERIOUSLY? */ .u-380553 + .sender_name { color: rgb(46, 204, 113); }
 /* Deihim007 */ u-380655 + .sender_name { color: rgb(46, 204, 113); }
 
 /* - Oranges */
