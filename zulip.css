@@ -146,5 +146,20 @@ body > .header {
 }
 
 /* custom user colors */
+/* - Reds */
 /* botder */ .u-380408 + .sender_name { color: rgb(231, 76, 60); }
 /* jhxp */ .u-380709 + .sender_name { color: rgb(231, 76, 60); }
+/* sbx320 */ .u-381687 + .sender_name { color: rgb(231, 76, 60); }
+
+/* - Greens */
+/* Lspd */ .u-380787 + .sender_name { color: rgb(46, 204, 113); }
+/* Patrick */ .u-380656 + .sender_name { color: rgb(46, 204, 113); }
+/* Disi */ .u-380447 + .sender_name { color: rgb(46, 204, 113); }
+/* SERIOUSLY? */ u-380553 + .sender_name { color: rgb(46, 204, 113); }
+/* Deihim007 */ u-380655 + .sender_name { color: rgb(46, 204, 113); }
+/* - Oranges */
+
+/* Haxardous */ .u-381881 + .sender_name { color: rgb(230, 126, 34); }
+/* CrosRoad95 */ .u-381746 + .sender_name { color: rgb(230, 126, 34); }
+/* 4O4 */ .u-381697 + .sender_name { color: rgb(230, 126, 34); }
+/* cleopatra */ .u-381653 + .sender_name { color: rgb(230, 126, 34); }
