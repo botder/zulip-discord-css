@@ -156,7 +156,7 @@ body > .header {
 /* Patrick */ .u-380656 + .sender_name { color: rgb(46, 204, 113); }
 /* Disi */ .u-380447 + .sender_name { color: rgb(46, 204, 113); }
 /* SERIOUSLY? */ .u-380553 + .sender_name { color: rgb(46, 204, 113); }
-/* Deihim007 */ u-380655 + .sender_name { color: rgb(46, 204, 113); }
+/* Deihim007 */ .u-380655 + .sender_name { color: rgb(46, 204, 113); }
 
 /* - Oranges */
 /* Haxardous */ .u-381881 + .sender_name { color: rgb(230, 126, 34); }
