@@ -1,0 +1,150 @@
+/* Copyright (c) 2021 Marek Kulik
+ * Source:  https://github.com/botder/zulip-discord-css
+ * License: MIT License
+*/
+
+body {
+    background-color: #2f3136 !important; /* --background-secondary */
+}
+
+/* unset background color to inherit body default */
+.app-main,
+.header-main,
+#compose,
+#compose-container {
+    background-color: unset !important;
+}
+
+/* changes the appearance of the input area in the middle column */
+#compose_controls,
+.compose-content {
+    border: unset !important; /* remove useless border */
+    background-color: #40444b !important; /* --channeltextarea-background */
+}
+
+/* apply a different background color for the middle column */
+.app-main > .column-middle,
+.header-main > .column-middle,
+#message_view_header_underpadding,
+.floating_recipient .message-header-wrapper {
+    background-color: #36393f !important; /* --background-primary */
+}
+
+/* disables useless background-color overwriting killer padding */
+body > .header {
+    padding-bottom: unset !important;
+}
+
+/* disable the background color overwrite */
+#left-sidebar,
+#right-sidebar {
+    /* disable zulip settings */
+    background-color: unset !important;
+}
+
+/* changes the appearance of message groups*/
+.message_list .recipient_row {
+    /* add more space between message groups */
+    margin-bottom: 25px !important;
+
+    /* disable borders (bottom and right) */
+    border: 0 !important;
+}
+
+/* changes the appearance of a single message row */
+.message_row {
+    border: 0 !important;
+}
+
+/* changes the appearance of a single message's box */
+.message_row > .messagebox,
+.message_row > .date_row {
+    /* disable the stream-color shadow on the left side */
+    box-shadow: unset !important;
+}
+
+/* changes the font for messages */
+.sender_name,
+.message_content {
+    font-family: Whitney, sans-serif !important;
+    font-size: 16px !important;
+}
+
+/* message author should be regular weight */
+.sender_name {
+    font-weight: 400 !important;
+}
+
+/* message text should be lighter */
+.message_content {
+    font-weight: 300 !important;
+}
+
+/* rounded profile pictures */
+.inline_profile_picture {
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 50% !important;
+}
+
+/* changes the appearance for code blocks */
+.rendered_markdown .codehilite pre {
+    background-color: #2f3136 !important; /* --background-secondary */
+    border: 1px solid #202225 !important; /* --background-tertiary */
+    font-size: 0.875rem !important;
+    line-height: 1.125rem !important;
+    text-indent: 0 !important;
+    white-space: pre-wrap !important;
+}
+
+/* disables background color for code lines (???) */
+.rendered_markdown .codehilite code {
+    background-color: unset !important;
+}
+
+/* changes the appearance of every embed */
+.message_embed {
+    border-radius: 4px;
+    padding: .75rem !important;
+    background-color: #2f3136 !important;  /* --background-secondary */
+    border-left: 4px solid #202225 !important; /* --background-tertiary */
+}
+
+/* add a gap between embed text and picture */
+.message_embed .data-container {
+    padding: 0 0 0 1rem !important;
+}
+
+/* disable bottom shadow for embed texts */
+.message_embed .data-container::after {
+    background: unset !important;
+}
+
+/* scrollbar styling */
+::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #202225; /* --scrollbar-auto-thumb */
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-track {
+    border: 4px solid transparent;
+    background-clip: padding-box;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+    margin-bottom: 8px;
+}
+
+/* custom user colors */
+/* botder */ .u-380408 + .sender_name { color: rgb(231, 76, 60); }
+/* jhxp */ .u-380709 + .sender_name { color: rgb(231, 76, 60); }
