@@ -10,11 +10,6 @@
     --background-tertiary: #202225;
     --channeltextarea-background: #40444b;
     --scrollbar-auto-thumb: #202225;
-
-    /* Custom colors */
-    --color-administrator: #e74c3c;
-    --color-staff: #2ecc71;
-    --color-patch-contributor: #e67e22;
 }
 
 .app,
@@ -158,19 +153,3 @@ body > .header {
 ::-webkit-scrollbar-track {
     margin-bottom: 8px;
 }
-
-/* custom user colors */
-/* botder */ .u-380408 + .sender_name { color: var(--color-administrator); }
-/* jhxp */   .u-380709 + .sender_name { color: var(--color-administrator); }
-/* sbx320 */ .u-381687 + .sender_name { color: var(--color-administrator); }
-
-/* Lspd */       .u-380787 + .sender_name { color: var(--color-staff); }
-/* Patrick */    .u-380656 + .sender_name { color: var(--color-staff); }
-/* Disi */       .u-380447 + .sender_name { color: var(--color-staff); }
-/* SERIOUSLY? */ .u-380553 + .sender_name { color: var(--color-staff); }
-/* Deihim007 */  .u-380655 + .sender_name { color: var(--color-staff); }
-
-/* Haxardous */  .u-381881 + .sender_name { color: var(--color-patch-contributor); }
-/* CrosRoad95 */ .u-381746 + .sender_name { color: var(--color-patch-contributor); }
-/* 4O4 */        .u-381697 + .sender_name { color: var(--color-patch-contributor); }
-/* cleopatra */  .u-381653 + .sender_name { color: var(--color-patch-contributor); }
