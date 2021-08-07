@@ -153,3 +153,8 @@ body > .header {
 ::-webkit-scrollbar-track {
     margin-bottom: 8px;
 }
+
+.rendered_markdown .emoji {
+    width: 36px !important;
+    height: 36px !important;
+}
